@@ -1,49 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Meme Store</title>
+  <title>Memes</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
       margin: 0;
-      padding: 30px;
+      padding: 10px;
+      background: #111;
     }
-    h1 { text-align: center; }
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: white;
-      padding: 15px;
-      border-radius: 10px;
-      overflow-wrap: anywhere;
+      gap: 10px;
     }
     img, video {
       width: 100%;
-      border-radius: 8px;
+      display: block;
+      border-radius: 5px;
     }
-    a { color: #155eef; }
   </style>
 </head>
 <body>
-  <h1>My Meme Store 😂</h1>
-  <p>My collection of memes, pictures and videos.</p>
-
   <div class="gallery">
-    <div class="card">
-      <img src="Screenshot%202026-10-02%20224802.png"
-           alt="My first meme">
-      <h3>My First Meme</h3>
-      <a href="Screenshot%202026-10-02%20224802.png"
-         target="_blank">Open / Share</a>
-    </div>
+    <a href="Screenshot%202026-10-02%20224802.png" target="_blank">
+      <img src="Screenshot%202026-10-02%20224802.png" alt="">
+    </a>
   </div>
 </body>
 </html>
-
