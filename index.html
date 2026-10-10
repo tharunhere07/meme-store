@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -12,30 +12,46 @@
 
     body {
       margin: 0;
-      padding: 0;
-      background: #fff;
+      padding: 10px;
+      background: #ffffff;
     }
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 0;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+      );
+      gap: 15px;
+      justify-items: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 350px;
     }
 
     img, video {
       display: block;
       width: 100%;
       height: auto;
-      margin: 0;
-      border: 0;
+      border-radius: 5px;
     }
   </style>
 </head>
+
 <body>
   <div class="gallery">
-    <a href="Screenshot%202026-10-02%20224802.png">
-      <img src="Screenshot%202026-10-02%20224802.png" alt="">
-    </a>
+
+    <div class="card">
+      <a href="Screenshot%202026-10-02%20224802.png"
+         target="_blank">
+        <img
+          src="Screenshot%202026-10-02%20224802.png"
+          alt="">
+      </a>
+    </div>
+
   </div>
 </body>
 </html>
